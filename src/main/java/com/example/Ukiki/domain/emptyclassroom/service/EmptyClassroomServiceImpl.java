@@ -1,19 +1,12 @@
-package com.example.Ukiki.emptyclassroom.service;
+package com.example.Ukiki.domain.emptyclassroom.service;
 
-import com.example.Ukiki.emptyclassroom.entity.AllClassroom;
-import com.example.Ukiki.emptyclassroom.entity.EmptyClassroom;
-import com.example.Ukiki.emptyclassroom.repository.AllClassroomRepository;
-import com.example.Ukiki.emptyclassroom.repository.EmptyClassroomRepository;
+import com.example.Ukiki.domain.emptyclassroom.repository.AllClassroomRepository;
+import com.example.Ukiki.domain.emptyclassroom.repository.EmptyClassroomRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.TextStyle;
 import java.util.List;
-import java.util.Locale;
 
 @Service
 @Transactional

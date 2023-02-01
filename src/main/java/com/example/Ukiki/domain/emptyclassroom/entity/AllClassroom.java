@@ -1,4 +1,4 @@
-package com.example.Ukiki.emptyclassroom.entity;
+package com.example.Ukiki.domain.emptyclassroom.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

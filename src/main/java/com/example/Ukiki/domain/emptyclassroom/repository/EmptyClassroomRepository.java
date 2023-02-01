@@ -1,6 +1,6 @@
-package com.example.Ukiki.emptyclassroom.repository;
+package com.example.Ukiki.domain.emptyclassroom.repository;
 
-import com.example.Ukiki.emptyclassroom.entity.EmptyClassroom;
+import com.example.Ukiki.domain.emptyclassroom.entity.EmptyClassroom;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

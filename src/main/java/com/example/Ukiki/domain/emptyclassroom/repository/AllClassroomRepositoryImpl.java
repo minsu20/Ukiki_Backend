@@ -1,12 +1,11 @@
-package com.example.Ukiki.emptyclassroom.repository;
+package com.example.Ukiki.domain.emptyclassroom.repository;
 
-import com.example.Ukiki.emptyclassroom.entity.AllClassroom;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import javax.persistence.EntityManager;
 import java.util.List;
 
-import static com.example.Ukiki.emptyclassroom.entity.QAllClassroom.allClassroom;
+import static com.example.Ukiki.domain.emptyclassroom.entity.QAllClassroom.allClassroom;
 
 public class AllClassroomRepositoryImpl implements AllClassroomRepositoryCustom {
     private final JPAQueryFactory queryFactory;

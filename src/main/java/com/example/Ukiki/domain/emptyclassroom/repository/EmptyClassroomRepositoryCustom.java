@@ -1,4 +1,4 @@
-package com.example.Ukiki.emptyclassroom.repository;
+package com.example.Ukiki.domain.emptyclassroom.repository;
 
 import java.util.List;
 

@@ -1,11 +1,10 @@
-package com.example.Ukiki.emptyclassroom.repository;
+package com.example.Ukiki.domain.emptyclassroom.repository;
 
-import com.example.Ukiki.emptyclassroom.exception.NotValidDofException;
-import com.example.Ukiki.emptyclassroom.exception.NotValidTimeException;
+import com.example.Ukiki.domain.emptyclassroom.exception.NotValidDofException;
+import com.example.Ukiki.domain.emptyclassroom.exception.NotValidTimeException;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import javax.persistence.EntityManager;
-import java.beans.Expression;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -13,7 +12,7 @@ import java.time.format.TextStyle;
 import java.util.List;
 import java.util.Locale;
 
-import static com.example.Ukiki.emptyclassroom.entity.QEmptyClassroom.emptyClassroom;
+import static com.example.Ukiki.domain.emptyclassroom.entity.QEmptyClassroom.emptyClassroom;
 
 public class EmptyClassroomRepositoryImpl implements EmptyClassroomRepositoryCustom{
     private final JPAQueryFactory queryFactory;

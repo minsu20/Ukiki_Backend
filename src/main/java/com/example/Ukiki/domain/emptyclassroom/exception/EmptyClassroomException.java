@@ -1,4 +1,4 @@
-package com.example.Ukiki.emptyclassroom.exception;
+package com.example.Ukiki.domain.emptyclassroom.exception;
 
 import com.example.Ukiki.global.exception.ApplicationException;
 import org.springframework.http.HttpStatus;
