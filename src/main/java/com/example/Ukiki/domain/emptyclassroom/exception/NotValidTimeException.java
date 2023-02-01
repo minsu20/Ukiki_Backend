@@ -1,8 +1,6 @@
-package com.example.Ukiki.emptyclassroom.exception;
+package com.example.Ukiki.domain.emptyclassroom.exception;
 
-import com.example.Ukiki.emptyclassroom.constant.EmptyClassroomConstants;
-
-import static com.example.Ukiki.emptyclassroom.constant.EmptyClassroomConstants.EmptyClassroomExceptionList.NOT_VALID_TIME;
+import static com.example.Ukiki.domain.emptyclassroom.constant.EmptyClassroomConstants.EmptyClassroomExceptionList.NOT_VALID_TIME;
 
 public class NotValidTimeException extends EmptyClassroomException {
 

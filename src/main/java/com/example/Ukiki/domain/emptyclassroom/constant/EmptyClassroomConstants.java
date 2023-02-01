@@ -1,4 +1,4 @@
-package com.example.Ukiki.emptyclassroom.constant;
+package com.example.Ukiki.domain.emptyclassroom.constant;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

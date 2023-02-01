@@ -1,8 +1,7 @@
-package com.example.Ukiki.emptyclassroom.controller;
+package com.example.Ukiki.domain.emptyclassroom.controller;
 
-import com.example.Ukiki.emptyclassroom.constant.EmptyClassroomConstants;
-import com.example.Ukiki.emptyclassroom.constant.EmptyClassroomConstants.EEmptyClassroomResponseMessage;
-import com.example.Ukiki.emptyclassroom.service.EmptyClassroomService;
+import com.example.Ukiki.domain.emptyclassroom.constant.EmptyClassroomConstants.EEmptyClassroomResponseMessage;
+import com.example.Ukiki.domain.emptyclassroom.service.EmptyClassroomService;
 import com.example.Ukiki.global.dto.ResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,4 @@
-package com.example.Ukiki.emptyclassroom.repository;
-
-import com.example.Ukiki.emptyclassroom.entity.AllClassroom;
+package com.example.Ukiki.domain.emptyclassroom.repository;
 
 import java.util.List;
 
