@@ -12,7 +12,7 @@ import java.time.format.TextStyle;
 import java.util.List;
 import java.util.Locale;
 
-import static com.example.Ukiki.domain.emptyclassroom.entity.QEmptyClassroom.emptyClassroom;
+import static com.example.Ukiki.domain.emptyclassroom.entity.QClassroom.classroom;
 
 public class EmptyClassroomRepositoryImpl implements EmptyClassroomRepositoryCustom{
     private final JPAQueryFactory queryFactory;
@@ -27,23 +27,23 @@ public class EmptyClassroomRepositoryImpl implements EmptyClassroomRepositoryCus
     @Override
     public List<String> getUsingClassroomByName(String classroomName){
         return queryFactory
-                .select(emptyClassroom.place)
-                .from(emptyClassroom)
-                .where(emptyClassroom.place.eq(classroomName))
-                .where(emptyClassroom.dayOfWeek.eq(getDayOfWeek()))
-                .where(emptyClassroom.startTime.lt(getMyTime()))
-                .where(emptyClassroom.endTime.gt(getMyTime()))
+                .select(classroom.place)
+                .from(classroom)
+                .where(classroom.place.eq(classroomName))
+                .where(classroom.dayOfWeek.eq(getDayOfWeek()))
+                .where(classroom.startTime.lt(getMyTime()))
+                .where(classroom.endTime.gt(getMyTime()))
                 .fetch();
     }
 
     @Override
     public List<String> getUsingClassroom(){
         return queryFactory
-                .select(emptyClassroom.place)
-                .from(emptyClassroom)
-                .where(emptyClassroom.dayOfWeek.eq(getDayOfWeek()))
-                .where(emptyClassroom.startTime.lt(getMyTime()))
-                .where(emptyClassroom.endTime.gt(getMyTime()))
+                .select(classroom.place)
+                .from(classroom)
+                .where(classroom.dayOfWeek.eq(getDayOfWeek()))
+                .where(classroom.startTime.lt(getMyTime()))
+                .where(classroom.endTime.gt(getMyTime()))
                 .fetch();
     }
 
