@@ -23,9 +23,6 @@ import java.util.List;
 @RequestMapping("lecture")
 @Api(tags = "LECTURE API")
 public class LectureController {
-    //공통교양 검색하기
-    //일반교양 검색하기
-    //전공 학수번호로 검색하기
     private final LectureService lectureService;
 
     @ApiOperation(value = "교양과목 조회", notes = "개설된 강좌 중 교양과목을 조회합니다. 일반, 교양 중 하나를 선택하세요.")
