@@ -2,14 +2,20 @@ language: java
 jdk:
   - openjdk11
 
+# 어느 브랜치에 push될 때 수행할 것인지?
 branches:
   only:
-    - master
+    - main 
 
-before_install:
-  - chmod +x gradlew
 
-# CI 실행 완료시 메일로 알람
+cache:
+  directories:
+    - '$HOME/.gradle' # gradle 사용하는 경우
+
+# main branch에 push 되었을 때 수행할 명령어
+script: "./gradlew clean build"
+
+# CI 완료 시 메일로 알람 (선택사항)
 notifications:
   email:
     recipients:
