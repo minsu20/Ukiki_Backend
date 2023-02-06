@@ -1,0 +1,16 @@
+language: java
+jdk:
+  - openjdk11
+
+branches:
+  only:
+    - master
+
+before_install:
+  - chmod +x gradlew
+
+# CI 실행 완료시 메일로 알람
+notifications:
+  email:
+    recipients:
+      - syt07100@gmail.com
