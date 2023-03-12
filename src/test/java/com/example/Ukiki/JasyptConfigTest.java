@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 public class JasyptConfigTest {
     @Test
     void jasypt(){
-        String url = "jdbc:mysql://ukiki.cijinkootmoi.ap-northeast-2.rds.amazonaws.com:3306/Ukiki_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8";
-        String username = "root";
-        String password = "alstn1234";
+        String url = "jdbc:mysql://ukiki-database.clg5p8yhgbqw.ap-northeast-2.rds.amazonaws.com:3306/ukiki?serverTimezone=Asia/Seoul&characterEncoding=UTF-8";
+        String username = "minsu";
+        String password = "rlaalstn1!";
 
         String encryptUrl = jasyptEncrypt(url);
         String encryptUsername = jasyptEncrypt(username);
