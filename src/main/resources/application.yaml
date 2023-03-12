@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ENC(iMJ8PcvPmKRCUrt2ehqMH9tMQk4Jp2KLQ7ADxaZO6Ow5QWiWYyl58tnXDht/8u7co/XvlwOkgxvkcds37qkx2CLDwRmJI8e5TYeTCLmzajxuKiqrzUMfIlS7ANGJPY/pWzGGIbH0SnNnjVnXNf5osUGf2XAZsrOLaw/FtBPgZddbCsPpJByHqJ0MKN+ncKGM)
-    username: ENC(PJEjnlfN7brB0seYxb1l5Q==)
-    password: ENC(hpmAdF3Gc2NKpVNZ1uWoBZrRlA4Wsxa9)
+    url: ENC(62p2sxnu8Jvu1DTh1BS7tUjWtr44OeAZLqnPYn5bkupo3hbIV03nCmlySQ28hIXCi7DlgZ2xdoCqcJYN8xFYJOYiktWoccxfD6u/rpJ2IiEUdRw1q1mp2Z0rROOXJJ+9RIerEpjFtj3xvhyxMnlalAnpGKnGP5lho6YRf6TXJrucbf7h76lIP9tZXIdCBd+4)
+    username: ENC(ZyNWKoQuMgw/qd5KmWYbMQ==)
+    password: ENC(n2i4eOTyZCDQkg26NKJUvJR0N5FFxZ9l)
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -16,4 +16,7 @@ jasypt:
   encryptor:
     bean: jasyptStringEncryptor
     password: minsu
+
+server:
+  port: 80
 
